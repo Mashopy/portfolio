@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.animated-bg {
+  background: linear-gradient(270deg, #1E3A8A, #3B82F6, #1E3A8A);
+  background-size: 600% 600%;
+  animation: waveBG 10s ease infinite;
+}
+
+@keyframes waveBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    animation: marquee 40s linear infinite;
+  }
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#content {
+    position: relative;
+    z-index: 10;
+}
