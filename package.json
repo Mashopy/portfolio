@@ -6,8 +6,8 @@
     "build": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --minify"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "tailwindcss": "^4.1.17"
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.1": true
