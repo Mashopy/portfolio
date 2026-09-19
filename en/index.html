@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Elias GHEERAERT, junior IT developer. Discover my background, skills and projects.">
+    <title>Portfolio - Elias GHEERAERT</title>
+    <link rel="icon" type="image/webp" href="./../docs/images/icones/favicon.webp">
+    <link href="./../styles/output.css" rel="stylesheet">
+</head>
+<body class="bg-black relative">
+    <canvas id="starfield"></canvas>
+
+    <div id="content" class="relative z-20">
+        <nav class="bg-black py-2 flex items-center justify-center fixed top-0 z-10 w-full space-x-4 border-dashed border-white border-b-2 gap-x-1 sm:gap-x-15">
+            <button id="section1Btn" class="bg-black text-white border-white border-2 rounded-full p-2 cursor-pointer transition duration-700 ease-in-out hover:scale-110 w-36 text-xs sm:text-base">About me</button>
+            <button id="section2Btn" class="bg-black text-white border-white border-2 rounded-full p-2 cursor-pointer transition duration-700 ease-in-out hover:scale-110 w-36 text-xs sm:text-base">Programming</button>
+            <button id="section3Btn" class="bg-black text-white border-white border-2 rounded-full p-2 cursor-pointer transition duration-700 ease-in-out hover:scale-110 w-36 text-xs sm:text-base">Tools</button>
+            <button id="section4Btn" class="bg-black text-white border-white border-2 rounded-full p-2 cursor-pointer transition duration-700 ease-in-out hover:scale-110 w-36 text-xs sm:text-base">Personal projects</button>
+        </nav>
+
+        <section id="section1">
+            <div class="relative bg-black border-white border-2 rounded-lg container mx-auto mt-20 p-4 sm:p-6 text-center text-white text-left overflow-hidden animated-bg">
+                <h1 class="text-3xl sm:text-4xl font-bold" id="scramble-text-1">
+                    Elias GHEERAERT
+                </h1>
+                <img fetchpriority="high" src="./../docs/images/profile/photo_de_profile.webp" alt="Portrait d'Elias GHEERAERT" class="w-32 h-32 sm:w-64 sm:h-64 object-cover mt-4 sm:mt-6 rounded-lg shadow-lg sm:absolute sm:inset-y-7 sm:right-10">
+                <h2 class="text-xl sm:text-2xl font-semibold mt-4">
+                    Junior IT developer
+                </h2>
+                <div class="grid grid-cols-4 sm:grid-cols-27 gap-2 mt-4 sm:mt-6 justify-start sm:justify-start">
+                    <a href="https://github.com/Mashopy" class="w-8 h-8">
+                        <img src="./../docs/images/icones/github-mark.svg" alt="GitHub logo" class="w-full h-full object-contain">
+                    </a>
+                    <a href="https://www.linkedin.com/in/elias-gheeraert-b86aaa2a3" class="w-8 h-8">
+                        <img src="https://img.icons8.com/ios-filled/50/1A1A1A/linkedin.png" alt="linkedin" class="w-full h-full object-contain">
+                    </a>
+                    <a href="https://FanDeMaraiste92.t.me" class="w-8 h-8">
+                        <img src="https://img.icons8.com/ios-filled/50/1A1A1A/telegram.png" alt="telegram" class="w-full h-full object-contain">
+                    </a>
+                    <a href="mailto:eliasgheeraert@gmail.com" class="w-8 h-8">
+                        <img src="https://img.icons8.com/fluency-systems-filled/48/1A1A1A/new-post.png" alt="email" class="w-full h-full object-contain">
+                    </a>
+                </div>
+                <p class="mt-4 text-center sm:text-left text-sm sm:text-xl">Interested in computer science since my youngest age, I made it my specialty.<br>I graduated from a University Bachelor of Computer Science with a specialization in the deployment of<br>secure and communicating applications.<br><br>I developed my skills in programming, networks, databases and systems through<br>my university studies, my projects and my professional experiences.</p>
+                <div class="flex item-center justify-center sm:items-start sm:justify-start mt-4 sm:mt-6">
+                    <a href="./../docs/files/CV_Elias_GHEERAERT_EN.pdf" download>
+                        <button class="bg-black text-white text-xs sm:text-base border-white border-2 rounded-full cursor-pointer transition duration-700 ease-in-out hover:scale-110 p-2 w-96">
+                            Download my CV
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="bg-black border-white border-2 rounded-lg container mx-auto mt-8 p-4 sm:p-6 text-center text-white text-left overflow-hidden animated-bg">
+                <h1 class="text-3xl sm:text-4xl font-bold">
+                    Programming skills
+                </h1>
+                <div class="relative w-full overflow-hidden h-52 mt-4 sm:mt-6">
+                    <!-- Scrolling images -->
+                    <div class="mask-l-from-90% mask-r-from-90% h-full overflow-hidden">
+                        <div class="flex w-max animate-marquee whitespace-nowrap">
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_HTML5.webp" alt="Logo HTML" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_CSS3.webp" alt="Logo CSS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_JavaScript.webp" alt="Logo JS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_PHP.webp" alt="Logo PHP" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Python.webp" alt="Logo Python" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Java.webp" alt="Logo Java" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Kotlin.webp" alt="Logo Kotlin" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C.webp" alt="Logo C" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C++.webp" alt="Logo C++" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C_sharp.webp" alt="Logo C#" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Flutter.webp" alt="Logo Flutter" class="w-36 h-36 object-contain">
+                            </div>
+                            <!-- duplicate for seamless loop -->
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_HTML5.webp" alt="Logo HTML" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_CSS3.webp" alt="Logo CSS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_JavaScript.webp" alt="Logo JS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_PHP.webp" alt="Logo PHP" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Python.webp" alt="Logo Python" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Java.webp" alt="Logo Java" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Kotlin.webp" alt="Logo Kotlin" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C.webp" alt="Logo C" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C++.webp" alt="Logo C++" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_C_sharp.webp" alt="Logo C#" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Flutter.webp" alt="Logo Flutter" class="w-36 h-36 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="bg-black border-white border-2 rounded-lg container mx-auto mt-8 p-4 sm:p-6 text-center text-white text-left overflow-hidden animated-bg">
+                <h1 class="text-3xl sm:text-4xl font-bold">
+                    Tools, frameworks and operating systems
+                </h1>
+                <div class="relative w-full overflow-hidden h-52 mt-4 sm:mt-6">
+                    <!-- Scrolling images -->
+                    <div class="mask-l-from-90% mask-r-from-90% h-full overflow-hidden">
+                        <div class="flex w-max animate-marquee whitespace-nowrap">
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Git.webp" alt="Logo Git" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_SQL.webp" alt="Logo SQL" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Docker.webp" alt="Logo Docker" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_TailwindCSS.webp" alt="Logo Tailwind CSS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Jetpack_Compose.webp" alt="Logo Jetpack Compose" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Linux.webp" alt="Logo Linux" class="w-36 h-36 object-contain">
+                            </div>
+                            <!-- duplicate for seamless loop -->
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Git.webp" alt="Logo Git" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_SQL.webp" alt="Logo SQL" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Docker.webp" alt="Logo Docker" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_TailwindCSS.webp" alt="Logo Tailwind CSS" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Jetpack_Compose.webp" alt="Logo Jetpack Compose" class="w-36 h-36 object-contain">
+                            </div>
+                            <div class="w-48 h-48 bg-white rounded-xl flex items-center justify-center mx-2">
+                                <img src="./../docs/images/logo/logo_Linux.webp" alt="Logo Linux" class="w-36 h-36 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div class="bg-black border-white border-2 rounded-lg container mx-auto mt-8 p-4 sm:p-6 text-center text-white">
+                <h1 class="text-3xl sm:text-4xl font-bold">
+                    Personal projects
+                </h1>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 py-4 h-auto transition duration-700 ease-in-out hover:scale-101">
+                    <div class="sm:col-span-2 rounded-t-xl sm:rounded-t-none sm:rounded-l-xl overflow-hidden relative">
+                        <div class="aspect-video relative">
+                            <img src="./../docs/images/projets/projet_1_main.webp" 
+                                alt="Projet 1 Image main" 
+                                class="absolute inset-0 w-full h-full object-cover rounded-t-xl sm:rounded-t-none sm:rounded-l-xl duration-1000 ease-in-out opacity-100">
+                            <img src="./../docs/images/projets/projet_1_alt.webp" 
+                                alt="Projet 1 Image alt" 
+                                class="absolute inset-0 w-full h-full object-cover rounded-t-xl sm:rounded-t-none sm:rounded-l-xl duration-1000 ease-in-out opacity-0">
+                        </div>
+                    </div>
+                    
+                    <div class="sm:col-span-1 animated-bg text-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl flex flex-col items-center justify-center p-4">
+                        <h2 class="text-3xl font-bold">Pac-Stolfo</h2>
+                        <p class="text-xl">
+                            </br>Project carried out in a team as part of an SAE at the IUT of Amiens. The goal of this project was to create a PAC-MAN-type game.
+                            </br></br>The game was made with Microsoft’s C# NET framework and SQL
+                            </br></br>The source code is available directly on <a class="underline decoration-white" href="https://github.com/ElTrabajo/Pastolfo">GitHub</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 py-4 h-auto transition duration-700 ease-in-out hover:scale-101">
+                    <div class="sm:col-span-1 animated-bg text-white rounded-t-xl sm:rounded-r-none sm:rounded-l-xl flex flex-col items-center justify-center p-4">
+                        <h2 class="text-3xl font-bold">Donation site for the municipality of Balot</h2>
+                        <p class="text-xl">
+                            </br>Project carried out as part of a mandatory internship lasting about 2 months for the Commune of Balot (21130).
+                            </br></br>The aim of this project was to create a website that would list the various projects in the town, an admin area so that the Balot town hall could directly manage the content of the site and integrate the different means of payment to help the town.
+                            </br></br>The site was created in HTML, CSS, JS, SQL and with the Node.Js framework
+                        </p>
+                    </div>
+
+                    <div class="sm:col-span-2 rounded-b-xl sm:rounded-l-none sm:rounded-r-xl overflow-hidden relative">
+                        <div class="aspect-video relative">
+                            <img src="./../docs/images/projets/projet_2_main.webp" 
+                                alt="Projet 2 Image main" 
+                                class="absolute inset-0 w-full h-full object-cover rounded-b-xl sm:rounded-l-none sm:rounded-r-xl duration-1000 ease-in-out opacity-100">
+                            <img src="./../docs/images/projets/projet_2_alt.webp" 
+                                alt="Projet 2 Image alt" 
+                                class="absolute inset-0 w-full h-full object-cover rounded-b-xl sm:rounded-l-none sm:rounded-r-xl duration-1000 ease-in-out opacity-0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 py-4 h-auto transition duration-700 ease-in-out hover:scale-101">
+                    <div class="sm:col-span-2 rounded-t-xl sm:rounded-t-none sm:rounded-l-xl overflow-hidden relative">
+                        <div class="aspect-video relative">
+                            <img
+                                src="./../docs/images/projets/projet_3_main.webp"
+                                alt="Project Image 3" 
+                                class="absolute inset-0 w-full h-full object-cover rounded-t-xl sm:rounded-t-none sm:rounded-l-xl">
+                        </div>
+                    </div>
+
+                    <div class="sm:sm:col-span-1 animated-bg text-white rounded-b-xl sm:rounded-l-none sm:rounded-r-xl flex flex-col items-center justify-center p-4">
+                        <h2 class="text-3xl font-bold">AOSP for the Nothing Phone (2a)</h2>
+                        <p class="text-xl">
+                            </br>Project completed and maintained since June 2025. The goal of this project was to create a stable port of AOSP to offer users of this device a more refined, free, customizable and constantly updated version.
+                            </br></br>This project was carried out with C, C++, Python, Kotlin and a lot of reverse engineering work to adapt the opensource Android system to the specificities of the device.
+                            </br></br>The source code is available directly on <a class="underline decoration-white" href="https://github.com/Nothing-2A">GitHub</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-black">
+    <h2 class="mt-4 p-4 text-center text-white text-lg">
+        Copyright © <span id="spanYear"></span>
+        <span class="text-blue-500">Elias Gheeraert</span>. All rights reserved.
+    </h2>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+    <script src="./../scripts/fading.js"></script>
+    <script src="./../scripts/gsap.js"></script>
+    <script src="./../scripts/star.js"></script>
+    <!-- Get current year for copyright statement -->
+    <script>$('#spanYear').html(new Date().getFullYear());</script>
+</body>
+</html>
